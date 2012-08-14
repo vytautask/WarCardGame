@@ -70,7 +70,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\CurrentUserDeck.cs" />
+    <Compile Include="Business\Mappings\UserDeckMap.cs" />
+    <Compile Include="Business\Mappings\UserMap.cs" />
+    <Compile Include="Business\UserDeck.cs" />
+    <Compile Include="Business\Managers\ManagerBase.cs" />
+    <Compile Include="Business\Managers\UserManager.cs" />
     <Compile Include="Business\User.cs" />
     <Compile Include="CustomValidator.cs" />
     <Compile Include="Transfer\TransferObjectBase.cs" />

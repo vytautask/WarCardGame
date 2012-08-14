@@ -14,6 +14,7 @@ namespace WarGameService.Business
 		private string _lastname = null;
 		private ulong _gamesCount = 0;
 		private ulong _gamesWon = 0;
+        private UserDeck _deck = null;
 
 		public User()
 		{
@@ -68,6 +69,12 @@ namespace WarGameService.Business
 			set { _gamesWon = value; }
 		}
 
+        public UserDeck Deck
+        {
+            get { return _deck; }
+            set { _deck = value; }
+        }
+
 		public override void Dispose(bool disposing)
 		{
 			if (disposing)
@@ -78,6 +85,12 @@ namespace WarGameService.Business
 					_password = null;
 					_firstname = null;
 					_lastname = null;
+
+                    if (_deck != null)
+                    {
+                        _deck.Dispose();
+                        _deck = null;
+                    }
 				}
 			}
 

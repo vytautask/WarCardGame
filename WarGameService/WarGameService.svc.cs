@@ -9,8 +9,14 @@ using WarGame.Transfer;
 
 namespace WarGameService
 {
+    //TODO: in future, all business logic should be implemented in separate commands, not there
 	public class WarGameService : IWarGameService
 	{
+        private static WarGameService()
+        {
+
+        }
+
 		public ActiveCardDTO GetActiveCardForUser(long userID)
 		{
 			throw new NotImplementedException();
