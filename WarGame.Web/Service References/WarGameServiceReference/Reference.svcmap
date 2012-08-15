@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f85115a3-917c-436e-b548-b8057c1217a7" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://localhost/WarGameService/WarGameService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="WarGameService.xsd" MetadataType="Schema" ID="a636ab5d-b07a-444c-b0d2-bd26ab001307" SourceId="1" SourceUrl="https://vytautas-pc.softdent.lt/WarGameService/WarGameService.svc?xsd=xsd1" />
+    <MetadataFile FileName="WarGameService.disco" MetadataType="Disco" ID="805f56fe-9348-48ea-b00b-71bf99abb317" SourceId="1" SourceUrl="https://vytautas-pc.softdent.lt/WarGameService/WarGameService.svc?disco" />
+    <MetadataFile FileName="WarGameService.wsdl" MetadataType="Wsdl" ID="11b282c1-ea07-49f7-9dbc-ca6a926f27ef" SourceId="1" SourceUrl="https://vytautas-pc.softdent.lt/WarGameService/WarGameService.svc?wsdl" />
+    <MetadataFile FileName="WarGameService1.xsd" MetadataType="Schema" ID="40679ee2-65a2-443e-bc40-0c145277bdef" SourceId="1" SourceUrl="https://vytautas-pc.softdent.lt/WarGameService/WarGameService.svc?xsd=xsd2" />
+    <MetadataFile FileName="WarGameService2.xsd" MetadataType="Schema" ID="44f64569-9658-48ec-9b3f-628a765b9ed2" SourceId="1" SourceUrl="https://vytautas-pc.softdent.lt/WarGameService/WarGameService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

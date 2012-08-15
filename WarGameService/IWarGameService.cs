@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.ServiceModel;
-using System.ServiceModel.Web;
-using System.Text;
+﻿using System.ServiceModel;
 using WarGame.Transfer;
 
 namespace WarGameService
@@ -13,9 +7,12 @@ namespace WarGameService
 	public interface IWarGameService
 	{
 		[OperationContract]
-		ActiveCardDTO GetActiveCardForUser(long userID);
+		ActiveCardDTO GetActiveCard();
 
 		[OperationContract]
-		byte GetCardsLeft(long userID);
+		byte GetCardsLeft();
+
+		[OperationContract]
+		void RegisterUser(string username, string password, string firstname, string lastname);
 	}
 }

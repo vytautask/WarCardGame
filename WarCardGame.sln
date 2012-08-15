@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarGame.Tests", "Tests\WarG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarGame.Transfer", "WarGame.Transfer\WarGame.Transfer.csproj", "{821B57B6-648E-4ACE-AA12-8498957AF689}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarGame.Web", "WarGame.Web\WarGame.Web.csproj", "{F3641BB6-A412-4852-8C86-D506BEDE5ACE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8640F778-8413-44BC-9A87-BBE0B1F77688} = {8640F778-8413-44BC-9A87-BBE0B1F77688}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +52,16 @@ Global
 		{821B57B6-648E-4ACE-AA12-8498957AF689}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{821B57B6-648E-4ACE-AA12-8498957AF689}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{821B57B6-648E-4ACE-AA12-8498957AF689}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F3641BB6-A412-4852-8C86-D506BEDE5ACE}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

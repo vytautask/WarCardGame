@@ -1,0 +1,41 @@
+﻿@using WarGame.Transfer
+@{
+	ViewBag.Title = "Draw card";
+}
+
+<h2>@ViewBag.Message</h2>
+<div>
+	You have @ViewBag.CardsLeft cards left.
+	
+	@if (ViewBag.ActiveCards != null)
+	{
+		<h2>You have @if (ViewBag.ActiveCards.IsHumanWinner)
+						 {
+						 	<text>won</text>
+						 }
+						 else
+						 {
+						 	<text>lost</text>
+						 }</h2>
+
+		if (ViewBag.ActiveCards.ComputerCard != null)
+		{
+			<h3>Computer has:</h3>
+			<p>@(ViewBag.ActiveCards.ComputerCard.Symbol) @(ViewBag.ActiveCards.ComputerCard.Number)</p>
+		}
+
+
+		<br/>
+
+		if (ViewBag.ActiveCards.HumanCard != null)
+		{
+			<h3>You have:</h3>
+			<p>@(ViewBag.ActiveCards.HumanCard.Symbol) @(ViewBag.ActiveCards.HumanCard.Number)</p>
+		}
+	}
+	
+	<br/>
+
+	@Html.ActionLink("Draw another card", "DrawCard", "Home")
+	
+</div>

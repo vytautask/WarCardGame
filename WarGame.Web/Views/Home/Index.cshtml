@@ -1,0 +1,14 @@
+﻿@using WarGame.Transfer
+@{
+	ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+<div>
+	You have @ViewBag.CardsLeft cards left.
+	
+	<br/>
+
+	@Html.ActionLink("Draw card", "DrawCard", "Home")
+	
+</div>

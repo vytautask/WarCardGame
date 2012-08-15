@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Business\CardTests.cs" />
     <Compile Include="Business\DeckTests.cs" />
+    <Compile Include="Business\Managers\UserManagerTests.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestBase.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="Transfer\ActiveCardDTOTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

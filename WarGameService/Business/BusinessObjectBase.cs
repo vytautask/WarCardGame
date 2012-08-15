@@ -12,7 +12,7 @@ namespace WarGameService.Business
 	{
 		private bool _isDisposed = false;
 
-		public bool IsDisposed
+		public virtual bool IsDisposed
 		{
 			get { return _isDisposed; }
 			set { _isDisposed = value; }

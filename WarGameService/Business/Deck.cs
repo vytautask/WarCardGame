@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Runtime.CompilerServices;
 
 [assembly: InternalsVisibleTo("Tests")]
@@ -15,7 +13,7 @@ namespace WarGameService.Business
 		{
 
 		}
-
+		
 		public IList<Card> Cards
 		{
 			get
@@ -45,9 +43,9 @@ namespace WarGameService.Business
 			return cards;
 		}
 
-		public Nullable<bool> IsCardGreater(Card card1, Card card2)
+		public bool IsCardGreater(Card card1, Card card2)
 		{
-			Nullable<bool> result = null;
+			bool result = true;
 
 			if (card1 != null)
 			{
@@ -94,6 +92,27 @@ namespace WarGameService.Business
 
 				if (cards.Count == 26)
 					foundEnough = true;
+			}
+
+			return cards;
+		}
+
+		public IList<Card> GetMissingCards(IList<Card> existingCards)
+		{
+			List<Card> cards = new List<Card>(52 - existingCards.Count);
+
+			foreach (Card card in Cards)
+			{
+				bool contains = false;
+
+				foreach (Card existingCard in existingCards)
+				{
+					if (existingCard.Number == card.Number && existingCard.Symbol == card.Symbol)
+						contains = true;
+				}
+
+				if(!contains)
+					cards.Add(card);
 			}
 
 			return cards;

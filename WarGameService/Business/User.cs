@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 
 namespace WarGameService.Business
 {
@@ -12,13 +9,12 @@ namespace WarGameService.Business
 		private string _password = null;
 		private string _firstname = null;
 		private string _lastname = null;
-		private ulong _gamesCount = 0;
-		private ulong _gamesWon = 0;
-        private UserDeck _deck = null;
+		private long _gamesCount = 0;
+		private long _gamesWon = 0;
+		private IList<Card> _deckCards = null;
 
 		public User()
 		{
-
 		}
 
 		public User(string username, string password)
@@ -27,53 +23,53 @@ namespace WarGameService.Business
 			Password = password;
 		}
 
-		public long Id
+		public virtual long Id
 		{
 			get { return _id; }
 			set { _id = value; }
 		}
 
-		public string Username
+		public virtual string Username
 		{
 			get { return _username; }
 			set { _username = value; }
 		}
 
-		public string Password
+		public virtual string Password
 		{
 			get { return _password; }
 			set { _password = value; }
 		}
 
-		public string Firstname
+		public virtual string Firstname
 		{
 			get { return _firstname; }
 			set { _firstname = value; }
 		}
 
-		public string Lastname
+		public virtual string Lastname
 		{
 			get { return _lastname; }
 			set { _lastname = value; }
 		}
 
-		public ulong GamesCount
+		public virtual long GamesCount
 		{
 			get { return _gamesCount; }
 			set { _gamesCount = value; }
 		}
 
-		public ulong GamesWon
+		public virtual long GamesWon
 		{
 			get { return _gamesWon; }
 			set { _gamesWon = value; }
 		}
 
-        public UserDeck Deck
-        {
-            get { return _deck; }
-            set { _deck = value; }
-        }
+		public virtual IList<Card> DeckCards
+		{
+			get { return _deckCards; }
+			set { _deckCards = value; }
+		}
 
 		public override void Dispose(bool disposing)
 		{
@@ -86,11 +82,16 @@ namespace WarGameService.Business
 					_firstname = null;
 					_lastname = null;
 
-                    if (_deck != null)
-                    {
-                        _deck.Dispose();
-                        _deck = null;
-                    }
+					if (_deckCards != null)
+					{
+						for (int i = 0; i < _deckCards.Count; i++)
+						{
+							_deckCards[i].Dispose();
+						}
+
+						_deckCards.Clear();
+						_deckCards = null;
+					}
 				}
 			}
 
