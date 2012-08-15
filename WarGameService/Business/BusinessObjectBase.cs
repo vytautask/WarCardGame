@@ -8,7 +8,7 @@ using System.Text;
 
 namespace WarGameService.Business
 {
-	internal class BusinessObjectBase: IDisposable
+	public class BusinessObjectBase: IDisposable
 	{
 		private bool _isDisposed = false;
 

@@ -2,7 +2,7 @@
 
 namespace WarGameService.Business
 {
-	internal class UserDeck : Deck
+	public class UserDeck : Deck
 	{
 		private User _user = null;
 

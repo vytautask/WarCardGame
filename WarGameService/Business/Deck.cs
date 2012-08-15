@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 [assembly: InternalsVisibleTo("Tests")]
 namespace WarGameService.Business
 {
-	internal class Deck : BusinessObjectBase
+	public class Deck : BusinessObjectBase
 	{
 		private IList<Card> _cards = null;
 

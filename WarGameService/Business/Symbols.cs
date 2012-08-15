@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WarGameService.Business
 {
-	internal enum Symbols
+	public enum Symbols
 	{
 		SPADES = 0,
 		HEARTS = 1,

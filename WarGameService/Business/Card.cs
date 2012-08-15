@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WarGameService.Business
 {
-	internal class Card: BusinessObjectBase
+	public class Card: BusinessObjectBase
 	{
 		private Symbols _symbol = Symbols.CLUBS;
 		private byte _number = 0;

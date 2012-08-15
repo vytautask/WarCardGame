@@ -12,7 +12,7 @@ namespace WarGameService
     //TODO: in future, all business logic should be implemented in separate commands, not there
 	public class WarGameService : IWarGameService
 	{
-        private static WarGameService()
+        static WarGameService()
         {
 
         }

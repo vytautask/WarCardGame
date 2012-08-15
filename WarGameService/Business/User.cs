@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WarGameService.Business
 {
-	internal class User : BusinessObjectBase
+	public class User : BusinessObjectBase
 	{
 		private long _id = -1;
 		private string _username = null;
